@@ -47,7 +47,8 @@ RUN env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommend
       sudo \
       synaptic \
       systemsettings \
-      nautilus
+      nautilus \
+      firefox
 
 # Dirty fix to avoid kdeinit error ind startkde. 
 RUN apt remove -y bluedevil && \
