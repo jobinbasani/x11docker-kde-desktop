@@ -50,7 +50,8 @@ RUN env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommend
       nautilus \
       firefox \
       unattended-upgrades \
-      cups
+      cups \
+      openjdk-8-jre-headless
 
 # Dirty fix to avoid kdeinit error ind startkde. 
 RUN apt remove -y bluedevil && \
